@@ -4,6 +4,7 @@
     <string name="autocompletetextview">AutoCompleteTextView</string>
     <string name="pierwsze_miasto">Pierwsze miasto</string>
     <string name="selected_item">Selected item:</string>
+    <string name="spinnery">spinnery</string>
 
     <string-array name="City">
         <item />
