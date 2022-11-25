@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="multiautocompletetextview">MultiAutoCompleteTextView</string>
+    <string name="autocompletetextview">AutoCompleteTextView</string>
+    <string name="select_language">Select language:</string>
+    <string name="pierwsze_miasto">Pierwsze miasto</string>
+</resources>

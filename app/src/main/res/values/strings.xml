@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Kominjazer</string>
+    <string name="multiautocompletetextview">MultiAutoCompleteTextView</string>
+    <string name="autocompletetextview">AutoCompleteTextView</string>
+    <string name="select_language">Select language:</string>
+    <string name="pierwsze_miasto">Pierwsze miasto</string>
+
+    <string-array name="Languages">
+        <item>Gdańsk</item>
+        <item>Szczecin</item>
+        <item>Olsztyn</item>
+        <item>Toruń</item>
+        <item>Bydgoszcz</item>
+        <item>Warszawa</item>
+        <item>Lódź</item>
+        <item>Kraków</item>
+        <item>Lublin</item>
+        <item>Opole</item>
+        <item>Katowice</item>
+        <item>Zielona Góra</item>
+        <item>Gorzów Wielkopolski</item>
+        <item>Kielce</item>
+        <item>Rzeszów</item>
+        <item>Poznań</item>
+        <item>Białystok</item>
+    </string-array>
+
 </resources>
