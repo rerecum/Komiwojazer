@@ -143,7 +143,17 @@ class MainActivity : AppCompatActivity() {
             }
             result.append("\nCalkowita odleglosc: $cost")
         }
+    @RequiresApi(Build.VERSION_CODES.Q)
+    fun screenshot(){
+        //Zrzut ekranu dla uzytkownika.
+        val activity = this
+        val view = activity.window.decorView.rootView
 
+        //Bitmapa
+        val bitmap = Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
 
+        //Canvas
+        val canvas = Canvas(bitmap)
+    }
     }
 }
