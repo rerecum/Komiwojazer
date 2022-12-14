@@ -7,24 +7,14 @@
     <string name="spinnery">spinnery</string>
 
     <string-array name="City">
-        <item />
         <item>Gdańsk</item>
-        <item>Szczecin</item>
-        <item>Olsztyn</item>
-        <item>Toruń</item>
-        <item>Bydgoszcz</item>
         <item>Warszawa</item>
-        <item>Lódź</item>
         <item>Kraków</item>
-        <item>Lublin</item>
-        <item>Opole</item>
-        <item>Katowice</item>
-        <item>Zielona Góra</item>
-        <item>Gorzów</item>
-        <item>Kielce</item>
-        <item>Rzeszów</item>
-        <item>Poznań</item>
+        <item>Kartowice</item>
         <item>Białystok</item>
+        <item>Olsztyn</item>
+        <item>Sosnowiec</item>
+        <item>Radom</item>
     </string-array>
 
 </resources>
