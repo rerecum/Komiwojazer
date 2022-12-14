@@ -65,6 +65,32 @@ class MainActivity : AppCompatActivity() {
         fun checkDistance(){
             editDistance.setText(City[spinnerA.selectedItemId.toInt()][spinnerB.selectedItemId.toInt()].toString())
         }
+        //W przypadku zmiany wartosci wywoluje sie funkcja sprawdzajaca
+        spinnerA.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+                checkDistance()
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+            }
+        }
+
+        change.setOnClickListener {
+            if(!editDistance.text.isNullOrEmpty()){
+                if(spinnerA.selectedItemId.toInt() == spinnerB.selectedItemId.toInt()){
+
+                }else{
+                    if(editDistance.text.toString().toInt()==0){
+
+                    }else{
+                        City[spinnerA.selectedItemId.toInt()][spinnerB.selectedItemId.toInt()] = editDistance.getText().toString().toInt()
+                        City[spinnerB.selectedItemId.toInt()][spinnerA.selectedItemId.toInt()] = editDistance.getText().toString().toInt()
+                    }
+                }
+            }
+        }
+
+
 
     }
 }
