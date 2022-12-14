@@ -60,5 +60,11 @@ class MainActivity : AppCompatActivity() {
             spinnerA.adapter = adapter
             spinnerB.adapter = adapter
         }
+
+        //Funkcja ktora sprawdza wybrane elementy z spinner. Wpisuje odleglosc z macierzy miedzy te elementy do txt.
+        fun checkDistance(){
+            editDistance.setText(City[spinnerA.selectedItemId.toInt()][spinnerB.selectedItemId.toInt()].toString())
+        }
+
     }
 }
