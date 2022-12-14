@@ -105,6 +105,15 @@ class MainActivity : AppCompatActivity() {
             for(i in 0 until size - 1){
                 //Zmienna przechowujaca najkrotszy dystans.
                 var min = Int.MAX_VALUE
+                // Zmienna przechowująca indeks miasta z najkrótszym dystansem
+                var cityIndex = 0
+                // Szukanie miasta z najkrótszym dystansem
+                for (j in 0 until size) {
+                    if (!visited[j] && City[currentCity][j] < min) {
+                        min = City[currentCity][j]
+                        cityIndex = j
+                    }
+                }
             }
         }
 
