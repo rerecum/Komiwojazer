@@ -12,15 +12,22 @@
 
 package com.example.kominjazer
 
-import android.annotation.SuppressLint
+import android.app.PendingIntent.getActivity
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.os.Build
 import android.os.Bundle
+import android.os.Environment
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
+import java.io.File
+import java.io.FileOutputStream
+import java.util.Random
+import android.os.Handler
+import androidx.annotation.RequiresApi
 
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -114,8 +121,29 @@ class MainActivity : AppCompatActivity() {
                         cityIndex = j
                     }
                 }
+
+                //Dodanie miasta do sciezki i oznaczenie jako odwiedzone
+                path[i] = cityIndex
+                visited[cityIndex] = true
+
+                currentCity = cityIndex
             }
+            //Dodanie ostatniego miasta
+            path[size - 1] = 0
+
+            //Wypisanie najkrotszej drogi
+            for(i in 0 until size){
+                result.append("${path[i]}")
+            }
+
+            //Wypisanie calkowitej odleglosci od pierwszego do ostatniego
+            var cost = 0
+            for(i in 0 until size - 1){
+                cost += City[path[i]][path[i + 1]]
+            }
+            result.append("\nCalkowita odleglosc: $cost")
         }
+
 
     }
 }
