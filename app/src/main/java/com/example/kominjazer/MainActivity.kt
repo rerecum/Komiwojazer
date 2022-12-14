@@ -23,15 +23,7 @@ class MainActivity : AppCompatActivity() {
             findViewById<Spinner>(R.id.spinner5),
             findViewById<Spinner>(R.id.spinner6),
             findViewById<Spinner>(R.id.spinner7),
-            findViewById<Spinner>(R.id.spinner8),
-            findViewById<Spinner>(R.id.spinner9),
-            findViewById<Spinner>(R.id.spinner10),
-            findViewById<Spinner>(R.id.spinner11),
-            findViewById<Spinner>(R.id.spinner12),
-            findViewById<Spinner>(R.id.spinner13),
-            findViewById<Spinner>(R.id.spinner14),
-            findViewById<Spinner>(R.id.spinner15),
-            findViewById<Spinner>(R.id.spinner16),
+            findViewById<Spinner>(R.id.spinner8)
         )
 
         val City = resources.getStringArray(R.array.City)
@@ -48,14 +40,6 @@ class MainActivity : AppCompatActivity() {
         spinnery[5].adapter = adapter
         spinnery[6].adapter = adapter
         spinnery[7].adapter = adapter
-        spinnery[8].adapter = adapter
-        spinnery[9].adapter = adapter
-        spinnery[10].adapter = adapter
-        spinnery[11].adapter = adapter
-        spinnery[12].adapter = adapter
-        spinnery[13].adapter = adapter
-        spinnery[14].adapter = adapter
-        spinnery[15].adapter = adapter
 
         spinnery[0].onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener {
