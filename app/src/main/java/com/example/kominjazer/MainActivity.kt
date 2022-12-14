@@ -17,7 +17,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.random.Random
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -43,9 +43,22 @@ class MainActivity : AppCompatActivity() {
             for(j in i+1..7){
                 //Generowanie losowych liczb w przedziale 1,1089
                 Random().nextInt(1089).let{
-
+                    //Przypisywanie wygenerowanej losowo liczby do tablicy
+                    //Dla odległości między A i B daje taką samą wartość jak między B i A
+                    City[i][j]=it
+                    City[j][i]=it
                 }
             }
+        }
+        //Wypelnienie spinnera wartosciami przypisanymi w pliki strings.xml
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.City,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinnerA.adapter = adapter
+            spinnerB.adapter = adapter
         }
     }
 }
