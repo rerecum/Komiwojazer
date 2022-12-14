@@ -14,25 +14,10 @@ Kacper Hnatyszyn 4prT5
 
 THE VISION
 
-Wybór miast które są stolicami województw tzn;
+Wybór 8 miast:
 
 1. Gdańsk
-2. Szczecin
-3. Olsztyn
-4. Toruń
-5. Bydgoszcz
-6. Warszawa
-7. Łódź
-8. Katowice
-9. Kraków
-10. Rzeszów
-11. Opole
-12. Poznań
-13. Białystok
-14. Zielona Góra
-15. Gorzów Wielkopolski
-16. Lublin
-17. Kielce
+2. 
 
 Lista tych miast będzie rozwijana i w łatwy sposób można będzie wybrać któreś z tej listy. List wyboru będzie aż 16, gdyż aplikacja ma ułatwić przejazd miedzy miastami tak aby odwiedzić raz jedno miasto i znaleźć najlepsza trasę do następnego i następnego i następnego itd.
 Nie można wybrać mniej niż 16 miast.
