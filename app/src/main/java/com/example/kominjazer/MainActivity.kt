@@ -90,7 +90,23 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        fun countDistance(){
+            //Szukanie sasiada.
+            val size = 8
+            //Odwiedzone miasta.
+            val visited = BooleanArray(size)
+            //Najkrotsza sciezka.
+            val path = IntArray(size)
+            //Miasto startowe.
+            var currentCity = 0
+            //Startowe miasto dodane do tablicy.
+            visited[currentCity] = true
 
+            for(i in 0 until size - 1){
+                //Zmienna przechowujaca najkrotszy dystans.
+                var min = Int.MAX_VALUE
+            }
+        }
 
     }
 }
