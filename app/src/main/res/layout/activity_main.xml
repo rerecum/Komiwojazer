@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="15dp"
         android:text="First City"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp" />
 
     <Spinner
@@ -22,6 +22,7 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:spinnerMode="dropdown"
+        android:foregroundTint="@color/black"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
@@ -29,7 +30,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="15dp"
         android:text="Second City"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20sp" />
 
     <Spinner
@@ -37,7 +38,7 @@
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:spinnerMode="dropdown"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
@@ -52,20 +53,10 @@
             android:hint="Range between cities"
             android:inputType="number"
             android:paddingHorizontal="10dp"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/black"
             tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/buttonChange"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="15dp"
-        android:backgroundTint="@color/cardview_shadow_end_color"
-        android:paddingVertical="10dp"
-        android:text="Change"
-        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/buttonWay"
@@ -78,6 +69,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="15dp"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 </LinearLayout>
