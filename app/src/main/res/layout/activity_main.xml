@@ -78,5 +78,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="15dp"
+        android:textColor="@color/white"
         android:textSize="18sp" />
 </LinearLayout>

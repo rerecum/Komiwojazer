@@ -1,18 +1,5 @@
-/*  Plan dzialania:
-- Layout
-- Miasta np. w spinner
-- Macierz
-- Wykrywanie elementów na spinnerze
-- Pokazywanie odległości przy zaznaczeniu miast
-- Gdy są dwa te same miasta to odleglosc musi byc rowna 0
-- Zmiana odległości moze byc domyslna, lub wpisana przez uzytkownika
-- Zrzut ekranu zapisywany do galerii
-- Algorytm
- */
-
 package com.example.kominjazer
 
-import android.app.PendingIntent.getActivity
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.os.Build
@@ -21,11 +8,10 @@ import android.os.Environment
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import java.util.Random
+import androidx.annotation.RequiresApi
 import java.io.File
 import java.io.FileOutputStream
-import java.util.Random
-import android.os.Handler
-import androidx.annotation.RequiresApi
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -141,11 +127,11 @@ class MainActivity : AppCompatActivity() {
             for(i in 0 until size - 1){
                 cost += City[path[i]][path[i + 1]]
             }
-            result.append("\nCalkowita odleglosc: $cost")
+            result.append("\nSalesman problem no more! : $cost")
         }
     @RequiresApi(Build.VERSION_CODES.Q)
     fun screenshot(){
-        //Zrzut ekranu dla uzytkownika.
+        //Zrzut ekranu
         val activity = this
         val view = activity.window.decorView.rootView
 
@@ -154,6 +140,25 @@ class MainActivity : AppCompatActivity() {
 
         //Canvas
         val canvas = Canvas(bitmap)
+        view.draw(canvas)
+
+        //Gdzie zapisac plik?
+        val filePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString() + File.separator + "SalesmanStatus.png"
+
+        //Tworzenie zrzutu
+        val file = File(filePath)
+        try {
+            val stream = FileOutputStream(file)
+
+            //Kompresja bitmap
+            bitmap.compress(Bitmap.CompressFormat.PNG, 90, stream)
+            stream.flush()
+            stream.close()
+        } catch (e: Exception) {
+            //Jesli blad:
+            e.printStackTrace()
+        }
     }
+
     }
 }
