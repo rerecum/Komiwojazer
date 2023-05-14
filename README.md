@@ -1,4 +1,4 @@
-# CitiesTravelling
+# Komiwojażer
 
 ## Założenia projektu:
 ### Aplikacja będzie pokazywać najlepszą ścieżkę pomiędzy miastami przy jednoczesnym odwiedzaniu każdego z miast tylko raz.
