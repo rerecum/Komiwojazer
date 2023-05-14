@@ -17,6 +17,7 @@
 
 ## Wygląd
 
+
 - Aplikacja posiada przyjazny dla użytkownika interfejs, w którym wszystkie opcje są intuicyjnie dostępne.
 
 - Ekran główny zawiera łatwo dostępne pola do wpisania danych.
