@@ -5,13 +5,9 @@
 
 ## Funkcjonalności
 
-- Aplikacja umożliwia wprowadzenie ośmiu miast, które będą uwzględnione w obliczeniach.
-
 - Użytkownik może wybrać dowolne miasto jako punkt startowy oraz dowolne miasto jako punkt końcowy.
 
 - Aplikacja oblicza i wyświetla najkrótszą ścieżkę pomiędzy wybranymi miastami, wraz z listą miast, które należy przejść oraz całkowitym dystansem do pokonania.
-
-- Aplikacja umożliwia również edycję nazw miast oraz długości dróg łączących je.
 
 - Aplikacja automatycznie uzupełnia dane, w przypadku braku ich uzupełnienia przez użytkownika.
 
@@ -41,11 +37,7 @@ flowchart TD;
 
 - Do obliczenia najkrótszej ścieżki między miastami zostanie wykorzystany Travelling Salesman Problem.
 
-- Aplikacja będzie używała Canvas w celu rysowania graficznej reprezentacji miast oraz ścieżek pomiędzy nimi.
-
 - Aplikacja będzie używała klasy MediaScannerConnection w celu zapisywania wygenerowanych graficznych reprezentacji ścieżek do galerii zdjęć w osobnym albumie.
-
-- Aplikacja będzie używała powiadomień w celu potwierdzenia zapisania zdjęć.
 
 - W celu zwiększenia wydajności i szybkości działania aplikacji, zostanie zastosowana optymalizacja kodu oraz odpowiednie struktury danych.
 
